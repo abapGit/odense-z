@@ -6,8 +6,9 @@
   "main": "index.js",
   "scripts": {
     "clone": "git clone https://github.com/SAP/project-odense.git && git clone https://github.com/abapGit/abapGit.git",
-    "lint": "npx abaplint",
-    "test": "npm run clone"
+    "lint1": "npx abaplint abaplint1.json",
+    "lint2": "npx abaplint abaplint2.json",
+    "test": "npm run lint1 && npm run lint2"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,6 @@
   },
   "homepage": "https://github.com/abapGit/odense-z#readme",
   "dependencies": {
-    "abaplint": "^2.29.0"
+    "@abaplint/cli": "^2.57.1"
   }
 }
