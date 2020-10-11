@@ -1,0 +1,25 @@
+{
+  "name": "odense-z",
+  "private": true,
+  "version": "1.0.0",
+  "description": "test, work in progress",
+  "main": "index.js",
+  "scripts": {
+    "clone": "git clone https://github.com/SAP/project-odense.git && git clone https://github.com/abapGit/abapGit.git",
+    "lint": "npx abaplint",
+    "test": "npm run clone"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abapGit/odense-z.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abapGit/odense-z/issues"
+  },
+  "homepage": "https://github.com/abapGit/odense-z#readme",
+  "dependencies": {
+    "abaplint": "^2.29.0"
+  }
+}
