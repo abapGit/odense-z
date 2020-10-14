@@ -1,6 +1,6 @@
 {
   "global": {
-    "files": "/project-odense/src/**/*.*",
+    "files": "/odense_zcl/src/**/*.*",
     "exclude": [],
     "skipGeneratedGatewayClasses": true,
     "skipGeneratedPersistentClasses": true,

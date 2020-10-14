@@ -1,6 +1,6 @@
 {
   "global": {
-    "files": "/abapGit/src/**/*.*",
+    "files": "/abapGit_cl/**/*.*",
     "exclude": [],
     "skipGeneratedGatewayClasses": true,
     "skipGeneratedPersistentClasses": true,
