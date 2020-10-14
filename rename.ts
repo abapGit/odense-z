@@ -31,16 +31,16 @@ function parse() {
 
 function rename() {
   const renamer = new abaplint.Rename(reg);
-  renamer.rename("CLAS", "zcl_abapgit_repo", "cl_abapgit_repo");
+//  renamer.rename("CLAS", "zcl_abapgit_repo", "cl_abapgit_repo"); // not sure
 //  renamer.rename("CLAS", "zcl_abapgit_auth", "cl_abapgit_auth");  // WORKS
-//  renamer.rename("CLAS", "zcl_abapgit_branch_overview", "cl_abapgit_branch_overview");
+//  renamer.rename("CLAS", "zcl_abapgit_branch_overview", "cl_abapgit_branch_overview"); // strange error
 //  renamer.rename("CLAS", "zcl_abapgit_dependencies", "cl_abapgit_dependencies"); // WORKS
-//  renamer.rename("CLAS", "zcl_abapgit_transport", "cl_abapgit_transport");
+//  renamer.rename("CLAS", "zcl_abapgit_transport", "cl_abapgit_transport"); // strange error
 //  renamer.rename("CLAS", "zcl_abapgit_performance_test", "cl_abapgit_performance_test"); // WORKS
 //  renamer.rename("CLAS", "zcl_abapgit_news", "cl_abapgit_news"); // WORKS
-//  renamer.rename("CLAS", "zcl_abapgit_zip", "cl_abapgit_zip");
-//  renamer.rename("CLAS", "zcl_abapgit_environment", "cl_abapgit_environment"); // missing CREATE OBJECT TYPE
-//  renamer.rename("CLAS", "zcl_abapgit_folder_logic", "cl_abapgit_folder_logic");
+//  renamer.rename("CLAS", "zcl_abapgit_zip", "cl_abapgit_zip"); // strange error
+//  renamer.rename("CLAS", "zcl_abapgit_environment", "cl_abapgit_environment"); // WORKS
+  renamer.rename("CLAS", "zcl_abapgit_folder_logic", "cl_abapgit_folder_logic");
 }
 
 function save() {
