@@ -55,19 +55,29 @@ function parse() {
 
 function rename() {
   const renamer = new abaplint.Rename(reg);
+
+  /*
   for (const o of reg.getObjects()) {
     if (reg.isDependency(o) === true) {
       continue;
     }
-    if (o.getType() === "CLAS") {
+    if (o.getType() === "CLAS" || o.getType() === "INTF") {
       const oldName = o.getName();
       console.log("Renaming " + oldName);
       const newName = oldName.substr(1);
       renamer.rename(o.getType(), oldName, newName);
     }
   }
+  */
+
   /*
+  renamer.rename("INTF", "zif_abapgit_auth", "if_abapgit_auth");
+  renamer.rename("INTF", "zif_abapgit_html", "if_abapgit_html");
+  renamer.rename("INTF", "zif_abapgit_gui_functions", "if_abapgit_gui_functions");
+  */
+
   renamer.rename("CLAS", "zcl_abapgit_repo", "cl_abapgit_repo");
+  /*
   renamer.rename("CLAS", "zcl_abapgit_auth", "cl_abapgit_auth");
   renamer.rename("CLAS", "zcl_abapgit_branch_overview", "cl_abapgit_branch_overview");
   renamer.rename("CLAS", "zcl_abapgit_dependencies", "cl_abapgit_dependencies");
