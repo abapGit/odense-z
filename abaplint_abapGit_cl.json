@@ -144,11 +144,7 @@
       "ignoreGlobalInterface": false
     },
     "inline_data_old_versions": true,
-    "keep_single_parameter_on_one_line": {
-      "exclude": [],
-      "severity": "Error",
-      "length": 120
-    },
+    "keep_single_parameter_on_one_line": false,
     "keyword_case": false,
     "line_break_multiple_parameters": false,
     "line_break_style": true,
