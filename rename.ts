@@ -4,6 +4,7 @@ import * as path from "path";
 import * as fsExtra from "fs-extra";
 import * as glob from "glob";
 
+// todo: most of this code will be added to @abaplint/cli, currently just testing
 // todo: load the right config
 
 const reg = new abaplint.Registry();
@@ -56,7 +57,6 @@ function parse() {
 function rename() {
   const renamer = new abaplint.Rename(reg);
 
-  /*
   for (const o of reg.getObjects()) {
     if (reg.isDependency(o) === true) {
       continue;
@@ -68,11 +68,24 @@ function rename() {
       renamer.rename(o.getType(), oldName, newName);
     }
   }
-  */
 
+  /*
   renamer.rename("INTF", "zif_abapgit_auth", "if_abapgit_auth");
-//  renamer.rename("INTF", "zif_abapgit_html", "if_abapgit_html");
+  renamer.rename("INTF", "zif_abapgit_tadir", "if_abapgit_tadir");
+  renamer.rename("INTF", "zif_abapgit_version", "if_abapgit_version");
+  renamer.rename("INTF", "zif_abapgit_html_viewer", "if_abapgit_html_viewer");
   renamer.rename("INTF", "zif_abapgit_gui_functions", "if_abapgit_gui_functions");
+  renamer.rename("INTF", "zif_abapgit_branch_overview", "if_abapgit_branch_overview");
+  renamer.rename("INTF", "zif_abapgit_sap_package", "if_abapgit_sap_package");
+  renamer.rename("INTF", "zif_abapgit_stage_logic", "if_abapgit_stage_logic");
+  renamer.rename("INTF", "zif_abapgit_git_operations", "if_abapgit_git_operations");
+  renamer.rename("INTF", "zif_abapgit_html", "if_abapgit_html");
+  renamer.rename("INTF", "zif_abapgit_environment", "if_abapgit_environment");
+  renamer.rename("INTF", "zif_abapgit_repo_srv", "if_abapgit_repo_srv");
+  renamer.rename("INTF", "zif_abapgit_code_inspector", "if_abapgit_code_inspector");
+  renamer.rename("INTF", "zif_abapgit_cts_api", "if_abapgit_cts_api");
+  renamer.rename("INTF", "zif_abapgit_definitions", "if_abapgit_definitions");
+  */
 
   /*
   renamer.rename("CLAS", "zcl_abapgit_repo", "cl_abapgit_repo");
