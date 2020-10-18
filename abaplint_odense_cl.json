@@ -12,6 +12,10 @@
       "url": "https://github.com/abaplint/deps",
       "folder": "/deps",
       "files": "/src/**/*.*"
+    },
+    {
+      "folder": "/abapGit_cl",
+      "files": "/**/*.*"
     }
   ],
   "syntax": {
