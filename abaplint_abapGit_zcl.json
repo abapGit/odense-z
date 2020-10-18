@@ -16,7 +16,7 @@
   ],
   "rename": {
     "output": "abapGit_cl",
-    "skip": ["\\.devc\\.xml", "\\.testclasses\\.", "\\.tran\\.", "\\.fugr\\.", "\\.prog\\."],
+    "skip": ["\\.devc\\.xml", "\\.testclasses\\.", "\\.tran\\.", "\\.fugr\\.", "\\.prog\\.", "\\.w3mi\\."],
     "patterns": [{"type": "CLAS|INTF", "oldName": "z(.*)", "newName": "$1"}]
   },
   "syntax": {
