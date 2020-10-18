@@ -14,6 +14,11 @@
       "files": "/src/**/*.*"
     }
   ],
+  "rename": {
+    "output": "abapGit_cl",
+    "skip": ["\\.devc\\.xml", "\\.testclasses\\.", "\\.tran\\.", "\\.fugr\\.", "\\.prog\\."],
+    "patterns": [{"type": "CLAS|INTF", "oldName": "z(.*)", "newName": "$1"}]
+  },
   "syntax": {
     "version": "v750",
     "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_|CL_ABAPGIT|IF_ABAPGIT|ABAPGIT_|TSA4C)",
